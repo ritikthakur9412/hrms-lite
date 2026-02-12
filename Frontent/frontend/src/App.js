@@ -4,7 +4,7 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "https://hrms-backend-s8gc.onrender.com"; //URL
+const API = process.env.REACT_APP_API_URL; //URL
 
 function App() {
   const [employees, setEmployees] = useState([]);
